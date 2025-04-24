@@ -613,6 +613,10 @@ footer {
     margin-bottom: 1rem;
 }
 
+.Copywrite {
+    margin-top: 1rem;
+}
+
 .back-to-top {
     display: inline-block;
     background-color: var(--bg-primary);
