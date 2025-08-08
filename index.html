@@ -1,14 +1,13 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="styles.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Loui Levy | Developer</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Header & Navigation -->
     <header>
         <nav>
             <div class="logo">Loui Levy</div>
@@ -29,7 +28,6 @@
     </header>
 
     <main>
-        <!-- Hero Section -->
         <section id="hero">
             <div class="hero-content">
                 <h1 class="hero-title">Loui Levy</h1>
@@ -43,321 +41,80 @@
             </div>
         </section>
 
-        <!-- About Section -->
         <section id="about">
             <h2 class="section-title">About Me</h2>
             <p>Welcome to my digital space. I'm Loui Levy, a developer passionate about creating innovative solutions and exploring new technologies.</p>
-            
             <div class="terminal-box">
                 <div class="terminal-header">
-                    <div class="terminal-circles">
-                        <div class="circle circle-red"></div>
-                        <div class="circle circle-yellow"></div>
-                        <div class="circle circle-green"></div>
-                    </div>
+                    <div class="terminal-circles"><div class="circle circle-red"></div><div class="circle circle-yellow"></div><div class="circle circle-green"></div></div>
                 </div>
                 <div class="terminal-content">
-                    <div class="command-line">
-                        <span class="prompt">loui@dev:~$</span>
-                        <span class="command">whoami</span>
-                    </div>
-                    <div class="command-output">
-                        A passionate developer with a keen interest in Python programming and building useful tools. I enjoy solving complex problems and continuously learning new technologies.
-                    </div>
-                    
-                    <div class="command-line">
-                        <span class="prompt">loui@dev:~$</span>
-                        <span class="command">ls -la skills/</span>
-                    </div>
-                    <div class="command-output">
-                        drwxr-xr-x  python<br>
-                        drwxr-xr-x  problem-solving<br>
-                        drwxr-xr-x  data-analysis<br>
-                        drwxr-xr-x  cybersecurity<br>
-                        drwxr-xr-x  automation<br>
-                        drwxr-xr-x  ethical-hacking<br>
-                        drwxr-xr-x  continuous-learning<br>
-                    </div>
-                    
-                    <div class="command-line">
-                        <span class="prompt">loui@dev:~$</span>
-                        <span class="command">cat interests.txt</span>
-                    </div>
-                    <div class="command-output">
-                        programming<br>
-                        automation<br>
-                        cybersecurity<br>
-                        ethical hacking<br>
-                    </div>
-                    
-                    <div class="command-line">
-                        <span class="prompt">loui@dev:~$</span>
-                        <span class="command">_</span>
-                        <span class="cursor"></span>
-                    </div>
+                    <div class="command-line"><span class="prompt">loui@dev:~$</span><span class="command">whoami</span></div>
+                    <div class="command-output">A passionate developer with a keen interest in Python programming and building useful tools. I enjoy solving complex problems and continuously learning new technologies.</div>
+                    <div class="command-line"><span class="prompt">loui@dev:~$</span><span class="command">ls -la skills/</span></div>
+                    <div class="command-output">drwxr-xr-x  python<br>drwxr-xr-x  problem-solving<br>drwxr-xr-x  data-analysis<br>drwxr-xr-x  cybersecurity<br>drwxr-xr-x  automation<br>drwxr-xr-x  ethical-hacking<br>drwxr-xr-x  continuous-learning<br></div>
+                    <div class="command-line"><span class="prompt">loui@dev:~$</span><span class="command">cat interests.txt</span></div>
+                    <div class="command-output">programming<br>automation<br>cybersecurity<br>ethical hacking<br></div>
+                    <div class="command-line"><span class="prompt">loui@dev:~$</span><span class="command">_</span><span class="cursor"></span></div>
                 </div>
             </div>
-            
             <p>Im a self learner who is motivated and passionate about ethical hacking, automation and programing in general.</p>
         </section>
 
-        <!-- Projects Section -->
         <section id="projects">
             <h2 class="section-title">Projects</h2>
             <p>Here are some projects I've worked on. Each demonstrates different skills and interests.</p>
-            
             <div class="projects-grid">
-                <!-- Project 1 -->
-                <div class="project-card">
-                    <div class="project-img">
-                        <i class="fas fa-sticky-note"></i>
-                    </div>
-                    <div class="project-content">
-                        <h3 class="project-title">Python Note Taking App</h3>
-                        <p class="project-description">A versatile note-taking application built with Python that allows users to create, edit, and organize their notes efficiently.</p>
-                        <div class="project-tech">
-                            <span class="tech-tag">Python</span>
-                            <span class="tech-tag">Tkinter</span>
-                            <span class="tech-tag">subprocess</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="#demo"><i class="fas fa-play-circle"></i> Live Demo</a>
-                            <a href="https://github.com/toxictager/notes-project"><i class="fab fa-github"></i> Source Code</a>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Project 2 - Example -->
-                <div class="project-card">
-                    <div class="project-img">
-                        <i class="fas fa-code"></i>
-                    </div>
-                    <div class="project-content">
-                        <h3 class="project-title">Linux Enumaration tool</h3>
-                        <p class="project-description">A linux enumaration(enum) tool to tell you the baisc about your linux PC like: System info, Logged in users, Network interfaces, ect</p>
-                        <div class="project-tech">
-                            <span class="tech-tag">Linux</span>
-                            <span class="tech-tag">Enumaration</span>
-                            <span class="tech-tag">Networking</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="https://github.com/toxictager/linux_enum"><i class="fab fa-github"></i> Source Code</a>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Coming soon-->
-                <div class="project-card">
-    <div class="project-img">
-        <i class="fas fa-user-secret"></i>
-    </div>
-    <div class="project-content">
-        <h3 class="project-title">SpecterX</h3> 
-        <p class="project-description">
-            A powerful all-in-one red team recon toolkit combining passive recon, subdomain scanning, port scanning, web fingerprinting, OSINT, vulnerability detection, payload generation, and more — all from a single interactive terminal interface.
-        </p>
-        <div class="project-tech">
-            <span class="tech-tag">Red Team</span>
-            <span class="tech-tag">Recon</span>
-            <span class="tech-tag">OSINT</span>
-            <span class="tech-tag">Automation</span>
-            <span class="tech-tag">Python</span>
-        </div>
-        <div class="project-links">
-            <a href="https://github.com/toxictager/SpecterX" target="_blank">
-                <i class="fab fa-github"></i> Source Code
-            </a>
-        </div>
-    </div>
-</div>
-
-
-            <!-- Coming soon-->
-                <div class="project-card">
-                    <div class="project-img">
-                        <i class="fas fa-laptop-code"></i>
-                    </div>
-                    <div class="project-content">
-                        <h3 class="project-title">Coming Soon</h3>
-                    </div>
-                </div>
+                <div class="project-card"><div class="project-img"><i class="fas fa-sticky-note"></i></div><div class="project-content"><h3 class="project-title">Python Note Taking App</h3><p class="project-description">A versatile note-taking application built with Python that allows users to create, edit, and organize their notes efficiently.</p><div class="project-tech"><span class="tech-tag">Python</span><span class="tech-tag">Tkinter</span><span class="tech-tag">subprocess</span></div><div class="project-links"><a href="#demo"><i class="fas fa-play-circle"></i> Live Demo</a><a href="https://github.com/toxictager/notes-project"><i class="fab fa-github"></i> Source Code</a></div></div></div>
+                <div class="project-card"><div class="project-img"><i class="fas fa-code"></i></div><div class="project-content"><h3 class="project-title">Linux Enumaration tool</h3><p class="project-description">A linux enumaration(enum) tool to tell you the baisc about your linux PC like: System info, Logged in users, Network interfaces, ect</p><div class="project-tech"><span class="tech-tag">Linux</span><span class="tech-tag">Enumaration</span><span class="tech-tag">Networking</span></div><div class="project-links"><a href="https://github.com/toxictager/linux_enum"><i class="fab fa-github"></i> Source Code</a></div></div></div>
+                <div class="project-card"><div class="project-img"><i class="fas fa-user-secret"></i></div><div class="project-content"><h3 class="project-title">SpecterX</h3> <p class="project-description">A powerful all-in-one red team recon toolkit combining passive recon, subdomain scanning, port scanning, web fingerprinting, OSINT, vulnerability detection, payload generation, and more — all from a single interactive terminal interface.</p><div class="project-tech"><span class="tech-tag">Red Team</span><span class="tech-tag">Recon</span><span class="tech-tag">OSINT</span><span class="tech-tag">Automation</span><span class="tech-tag">Python</span></div><div class="project-links"><a href="https://github.com/toxictager/SpecterX" target="_blank"><i class="fab fa-github"></i> Source Code</a></div></div></div>
+                <div class="project-card"><div class="project-img"><i class="fas fa-laptop-code"></i></div><div class="project-content"><h3 class="project-title">Coming Soon</h3></div></div>
             </div>
         </section>
 
-        <!-- Note App Demo Section -->
         <section id="demo">
             <h2 class="section-title">Python Note Taking App</h2>
             <p>Try out a simplified version of my Python note-taking application right in your browser!</p>
-            
-            <div id="note-app">
-                <div class="note-app-container">
-                    <div class="note-app-header">
-                        <input type="text" class="note-title-input" placeholder="Note Title" value="My First Note">
-                        <button class="note-btn" id="new-note-btn">New Note</button>
-                    </div>
-                    <div class="note-app-content">
-                        <div class="note-sidebar">
-                            <div class="note-item active">
-                                <div class="note-item-title">My First Note</div>
-                                <div class="note-item-preview">This is my first note in the app...</div>
-                            </div>
-                            <div class="note-item">
-                                <div class="note-item-title">Ideas</div>
-                                <div class="note-item-preview">- Project ideas for the weekend...</div>
-                            </div>
-                            <div class="note-item">
-                                <div class="note-item-title">To-Do List</div>
-                                <div class="note-item-preview">[ ] Complete the website...</div>
-                            </div>
-                        </div>
-                        <div class="note-editor">
-                            <textarea class="note-content" placeholder="Start typing your note here...">This is my first note in the app. I can write anything I want here and organize my thoughts.
-
-The app allows me to:
-- Create new notes
-- Edit existing notes
-- Delete notes I no longer need
-- Organize notes by categories
-
-It's a great way to keep track of ideas, to-do lists, and important information!</textarea>
-                            <div class="note-controls">
-                                <button class="note-btn" id="delete-note-btn">Delete</button>
-                                <button class="note-btn primary" id="save-note-btn">Save</button>
-                            </div>
-                        </div>
-                    </div>
+            <div id="note-app"><div class="note-app-container"><div class="note-app-header"><input type="text" class="note-title-input" placeholder="Note Title" value="My First Note"><button class="note-btn" id="new-note-btn">New Note</button></div><div class="note-app-content"><div class="note-sidebar"><div class="note-item active"><div class="note-item-title">My First Note</div><div class="note-item-preview">This is my first note in the app...</div></div><div class="note-item"><div class="note-item-title">Ideas</div><div class="note-item-preview">- Project ideas for the weekend...</div></div><div class="note-item"><div class="note-item-title">To-Do List</div><div class="note-item-preview">[ ] Complete the website...</div></div></div><div class="note-editor"><textarea class="note-content" placeholder="Start typing your note here...">This is my first note in the app. I can write anything I want here and organize my thoughts. The app allows me to: - Create new notes - Edit existing notes - Delete notes I no longer need - Organize notes by categories It's a great way to keep track of ideas, to-do lists, and important information!</textarea><div class="note-controls"><button class="note-btn" id="delete-note-btn">Delete</button><button class="note-btn primary" id="save-note-btn">Save</button></div></div></div></div></div>
+            <p class="note-app-description" style="margin-top: 1rem;">This is a simplified front-end demo of my Python note-taking application. The full version includes additional features like note categorization, search functionality, and data persistence.</p>
+        </section>
+        
+        <section id="blog">
+            <h2 class="section-title">Hacking Journal</h2>
+            <p>A log of my journey through cybersecurity, new discoveries, and project deep-dives.</p>
+            <div id="blog-feed" class="blog-feed"></div>
+        </section>
+        <section id="resume">
+            <h2 class="section-title">Resume</h2>
+            <p>Here's a quick look at my education and technical skills as I pursue opportunities in cybersecurity and automation.</p>
+            <div class="resume-content">
+                <div class="resume-section">
+                    <h3 class="resume-section-title">Education</h3>
+                    <div class="resume-item"><div class="resume-item-header"><h4 class="resume-item-title">СУ "Свети Климент Охридски"</h4><div class="resume-item-date">2023 - Present</div></div><div class="resume-item-subtitle">с. Камен, България</div><div class="resume-item-description">Current 11th grade student pursuing a strong interest in ethical hacking, scripting, and information security.</div></div>
+                    <div class="resume-item"><div class="resume-item-header"><h4 class="resume-item-title">ПГ по електротехника и автоматика</h4><div class="resume-item-date">2021 - 2023</div></div><div class="resume-item-subtitle">София, България</div><div class="resume-item-description">Completed 8th and 9th grade with focus on technical subjects including electronics, automation, and computing fundamentals.</div></div>
+                </div>
+                <div class="resume-section">
+                    <h3 class="resume-section-title">Skills</h3>
+                    <div class="skill-tags"><span class="skill-tag">Python</span><span class="skill-tag">Batch Scripting</span><span class="skill-tag">VBScript</span><span class="skill-tag">Linux</span><span class="skill-tag">Networking</span><span class="skill-tag">Ethical Hacking</span><span class="skill-tag">Recon Tools</span><span class="skill-tag">Automation</span><span class="skill-tag">HTML/CSS</span><span class="skill-tag">GitHub</span><span class="skill-tag">PyQt6</span></div>
+                </div>
+                <div class="resume-section">
+                    <h3 class="resume-section-title">Projects</h3>
+                    <div class="resume-item"><div class="resume-item-header"><h4 class="resume-item-title">SpecterX</h4><div class="resume-item-date">2025 (In Progress)</div></div><div class="resume-item-subtitle">Educational Recon Toolkit</div><div class="resume-item-description">A Python-based toolkit combining DNS, WHOIS, and subdomain enumeration with plans for integrating a simple remote access tool (RAT). Designed for legal, educational red-team demos. Still under development.</div></div>
+                    <div class="resume-item"><div class="resume-item-header"><h4 class="resume-item-title">LinuxEnumTool</h4><div class="resume-item-date">2025</div></div><div class="resume-item-subtitle">system info</div><div class="resume-item-description">A Bash script that automates enumeration of critical privilege escalation vectors on Linux targets. Includes SUID checks, kernel info, PATH vulnerabilities, and misconfigurations.</div></div>
+                    <div class="resume-item"><div class="resume-item-header"><h4 class="resume-item-title">Python Note App</h4><div class="resume-item-date">2025</div></div><div class="resume-item-subtitle">Desktop Note-Taking Tool</div><div class="resume-item-description">A user-friendly notes app built with Tkinter, including live editing, autosave, and a clean UI. Ideal for organizing ideas and research notes locally.</div></div>
                 </div>
             </div>
-            
-            <p class="note-app-description" style="margin-top: 1rem;">
-                This is a simplified front-end demo of my Python note-taking application. The full version includes additional features like note categorization, search functionality, and data persistence.
-            </p>
         </section>
 
-        <!-- Resume Section -->
-        <section id="resume">
-          
-            <section id="resume">
-                <h2 class="section-title">Resume</h2>
-                <p>Here's a quick look at my education and technical skills as I pursue opportunities in cybersecurity and automation.</p>
-              
-                <div class="resume-content">
-              
-                  <!-- Education Section -->
-                  <div class="resume-section">
-                    <h3 class="resume-section-title">Education</h3>
-              
-                    <div class="resume-item">
-                      <div class="resume-item-header">
-                        <h4 class="resume-item-title">СУ "Свети Климент Охридски"</h4>
-                        <div class="resume-item-date">2023 - Present</div>
-                      </div>
-                      <div class="resume-item-subtitle">с. Камен, България</div>
-                      <div class="resume-item-description">
-                        Current 11th grade student pursuing a strong interest in ethical hacking, scripting, and information security.
-                      </div>
-                    </div>
-              
-                    <div class="resume-item">
-                      <div class="resume-item-header">
-                        <h4 class="resume-item-title">ПГ по електротехника и автоматика</h4>
-                        <div class="resume-item-date">2021 - 2023</div>
-                      </div>
-                      <div class="resume-item-subtitle">София, България</div>
-                      <div class="resume-item-description">
-                        Completed 8th and 9th grade with focus on technical subjects including electronics, automation, and computing fundamentals.
-                      </div>
-                    </div>
-                  </div>
-              
-                  <!-- Skills Section -->
-                  <div class="resume-section">
-                    <h3 class="resume-section-title">Skills</h3>
-                    <div class="skill-tags">
-                      <span class="skill-tag">Python</span>
-                      <span class="skill-tag">Batch Scripting</span>
-                      <span class="skill-tag">VBScript</span>
-                      <span class="skill-tag">Linux</span>
-                      <span class="skill-tag">Networking</span>
-                      <span class="skill-tag">Ethical Hacking</span>
-                      <span class="skill-tag">Recon Tools</span>
-                      <span class="skill-tag">Automation</span>
-                      <span class="skill-tag">HTML/CSS</span>
-                      <span class="skill-tag">GitHub</span>
-                      <span class="skill-tag">PyQt6</span>
-                    </div>
-                  </div>
-                   <!-- Projects Section -->
-<div class="resume-section">
-    <h3 class="resume-section-title">Projects</h3>
-  
-    <div class="resume-item">
-      <div class="resume-item-header">
-        <h4 class="resume-item-title">SpecterX</h4>
-        <div class="resume-item-date">2025 (In Progress)</div>
-      </div>
-      <div class="resume-item-subtitle">Educational Recon Toolkit</div>
-      <div class="resume-item-description">
-        A Python-based toolkit combining DNS, WHOIS, and subdomain enumeration with plans for integrating a simple remote access tool (RAT). Designed for legal, educational red-team demos. Still under development.
-      </div>
-    </div>
-  
-    <div class="resume-item">
-      <div class="resume-item-header">
-        <h4 class="resume-item-title">LinuxEnumTool</h4>
-        <div class="resume-item-date">2025</div>
-      </div>
-      <div class="resume-item-subtitle">system info</div>
-      <div class="resume-item-description">
-        A Bash script that automates enumeration of critical privilege escalation vectors on Linux targets. Includes SUID checks, kernel info, PATH vulnerabilities, and misconfigurations.
-      </div>
-    </div>
-  
-    <div class="resume-item">
-      <div class="resume-item-header">
-        <h4 class="resume-item-title">Python Note App</h4>
-        <div class="resume-item-date">2025</div>
-      </div>
-      <div class="resume-item-subtitle">Desktop Note-Taking Tool</div>
-      <div class="resume-item-description">
-        A user-friendly notes app built with Tkinter, including live editing, autosave, and a clean UI. Ideal for organizing ideas and research notes locally.
-      </div>
-    </div>
-  </div>
-  
-                 
-              </section>
-              
-            
-        </section>
-
-        <!-- Contact Section -->
         <section id="contact">
             <h2 class="section-title">Contact</h2>
             <p>Interested in working together or have a question? Feel free to reach out!</p>
-            
             <div class="contact-buttons">
-                <a href="mailto: louilevyofficial@gmail.com" class="contact-btn">
-                    <i class="fas fa-envelope"></i> Email Me
-                </a>
-                <a href="https://www.linkedin.com/in/loui-levy-3067ba344/" target="_blank" class="contact-btn">
-                    <i class="fab fa-linkedin"></i> Connect on LinkedIn
-                </a>
-                <a href="https://github.com/toxictager" target="_blank" class="contact-btn">
-                    <i class="fab fa-github"></i> Follow on GitHub
-                </a>
+                <a href="mailto: louilevyofficial@gmail.com" class="contact-btn"><i class="fas fa-envelope"></i> Email Me</a>
+                <a href="https://www.linkedin.com/in/loui-levy-3067ba344/" target="_blank" class="contact-btn"><i class="fab fa-linkedin"></i> Connect on LinkedIn</a>
+                <a href="https://github.com/toxictager" target="_blank" class="contact-btn"><i class="fab fa-github"></i> Follow on GitHub</a>
             </div>
         </section>
-    </main>
-    
-    <!-- Footer -->
-    <footer>
-        <a href="#" class="back-to-top">Back to Top <i class="fas fa-arrow-up"></i></a>
-        <div class="Copywrite">thanks for the help Alex.</div>
-        <div class="Copywrite">&copy; 2025 Loui Levy. All rights reserved.</div>
-    </footer>
-
-    </section>
     </main>
     
     <footer>
@@ -367,7 +124,6 @@ It's a great way to keep track of ideas, to-do lists, and important information!
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
-    
     <script src="script.js"></script>
 </body>
 </html>

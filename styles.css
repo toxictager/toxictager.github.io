@@ -97,7 +97,7 @@ nav {
 main {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 6rem 1.5rem 2rem;
+    padding: 8rem 1.5rem 2rem;
 }
 
 section {
@@ -135,7 +135,6 @@ section:hover {
 #hero {
     text-align: center;
     padding: 4rem 2rem;
-    margin-top: 2rem;
     background: linear-gradient(to bottom right, var(--bg-secondary), var(--bg-primary));
     border: none;
     position: relative;
@@ -609,10 +608,6 @@ footer {
     border-top: 1px solid var(--border);
 }
 
-.footer-text {
-    margin-bottom: 1rem;
-}
-
 .Copywrite {
     margin-top: 1rem;
 }
@@ -658,7 +653,7 @@ footer {
     .contact-buttons {
         flex-direction: column;
     }
-}
+} /* THIS IS THE CORRECTED BRACE LOCATION */
 
 /* Terminal blinking cursor animation */
 .cursor {
@@ -718,24 +713,12 @@ footer {
 }
 
 @keyframes glitch {
-    0% {
-        transform: translate(0);
-    }
-    20% {
-        transform: translate(-2px, 2px);
-    }
-    40% {
-        transform: translate(-2px, -2px);
-    }
-    60% {
-        transform: translate(2px, 2px);
-    }
-    80% {
-        transform: translate(2px, -2px);
-    }
-    100% {
-        transform: translate(0);
-    }
+    0% { transform: translate(0); }
+    20% { transform: translate(-2px, 2px); }
+    40% { transform: translate(-2px, -2px); }
+    60% { transform: translate(2px, 2px); }
+    80% { transform: translate(2px, -2px); }
+    100% { transform: translate(0); }
 }
 /*
 =================================

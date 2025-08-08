@@ -60,48 +60,70 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
     // ================================================= //
-    // ========= DYNAMIC MARKDOWN BLOG ENGINE ========== //
+    // ===== EFFICIENT MARKDOWN BLOG (WORKS LOCALLY) ===== //
     // ================================================= //
 
-    // PART 1: The list of your posts. This is the ONLY part you'll edit.
-    const postFiles = [
-        'my-first-post.md'
+    // PART 1: Your blog posts.
+    // To add a new post, copy an entire post object and add it to the top of the list.
+    const blogPosts = [
+        // POST 1
+        {
+            content: `
+# My First Post: The Journey Begins
+
+**Published on: August 8, 2025**
+
+![A person typing on a laptop with code on the screen.](https://images.unsplash.com/photo-1544256718-3b62ff584963?q=80&w=2070&auto=format&fit=crop)
+
+Welcome to the first entry in my ethical hacking journal! I've created this blog to document everything I learn—from fundamental concepts and tool configurations to my experiences with Capture The Flag (CTF) challenges and personal projects.
+
+### What I'm learning:
+* Network scanning with Nmap
+* Directory brute-forcing
+* Subdomain enumeration
+
+Here's an example of a code block:
+\`\`\`bash
+# Example of a simple nmap scan
+nmap -sV --script=default 127.0.0.1
+\`\`\`
+            `
+        },
+        // To add a new post, copy the object above and paste it here. For example:
+        /*
+        {
+            content: \`
+# My Second Post
+
+This is my next post. It's easy to add new content here.
+            \`
+        },
+        */
+        
     ];
 
-    // PART 2: Get the empty container from your HTML.
+    // PART 2: The code that builds the blog. (You don't need to edit this).
     const blogFeed = document.getElementById('blog-feed');
 
-    // PART 3: The main function that fetches and displays the posts.
-    async function loadPosts() {
-        if (!blogFeed) return; // Stop if the container doesn't exist.
+    if (blogFeed) {
+        blogPosts.forEach(post => {
+            // Convert the markdown string into HTML using the Marked.js library
+            const postHTML = marked.parse(post.content);
+            
+            // Create a container for the post
+            const postContainer = document.createElement('article');
+            postContainer.className = 'blog-post';
+            postContainer.innerHTML = postHTML;
+            
+            // Add the complete post to your webpage
+            blogFeed.appendChild(postContainer);
 
-        for (const file of postFiles) {
-            try {
-                const response = await fetch(`posts/${file}`);
-                if (!response.ok) throw new Error(`File not found: ${file}`);
-
-                const markdownText = await response.text();
-                const postHTML = marked.parse(markdownText);
-                
-                const postContainer = document.createElement('article');
-                postContainer.className = 'blog-post';
-                postContainer.innerHTML = postHTML;
-                
-                blogFeed.appendChild(postContainer);
-
-                if (postFiles.indexOf(file) < postFiles.length - 1) {
-                    const divider = document.createElement('hr');
-                    divider.className = 'post-divider';
-                    blogFeed.appendChild(divider);
-                }
-            } catch (error) {
-                console.error('Error loading post:', error);
-                if(blogFeed) blogFeed.innerHTML += `<p style="color: #ff5f56;">Error: Could not load post '${file}'. Make sure the file exists in the 'posts' folder and the filename is correct in script.js.</p>`;
+            // Add a divider line between posts
+            if (blogPosts.indexOf(post) < blogPosts.length - 1) {
+                const divider = document.createElement('hr');
+                divider.className = 'post-divider';
+                blogFeed.appendChild(divider);
             }
-        }
+        });
     }
-
-    // PART 4: Call the function to start the blog engine.
-    loadPosts();
-
 });
