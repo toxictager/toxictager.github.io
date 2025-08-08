@@ -737,3 +737,108 @@ footer {
         transform: translate(0);
     }
 }
+/*
+=================================
+Blog Section Styles
+=================================
+*/
+
+#blog .section-title {
+    margin-bottom: 1rem;
+}
+
+.blog-feed {
+    background-color: var(--bg-primary);
+    padding: 0;
+    border-radius: 5px;
+    margin-top: 1.5rem;
+}
+
+.blog-post {
+    padding: 1.5rem;
+    background-color: var(--bg-secondary);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+}
+
+/* This adds a divider line between posts */
+.post-divider {
+    border: 0;
+    height: 1px;
+    background-color: var(--border);
+    margin: 2rem 0;
+}
+/* Hide the divider after the very last post */
+.blog-post:last-of-type + .post-divider {
+    display: none;
+}
+
+
+/* Styling for content INSIDE the markdown file */
+.blog-post h1, .blog-post h2, .blog-post h3 {
+    color: var(--accent);
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+    border-bottom: 1px solid var(--border);
+    padding-bottom: 0.5rem;
+}
+
+.blog-post h1 { font-size: 1.8rem; }
+.blog-post h2 { font-size: 1.5rem; }
+.blog-post h3 { font-size: 1.3rem; }
+
+.blog-post p {
+    color: var(--text-primary);
+    line-height: 1.8;
+    margin-bottom: 1rem;
+}
+
+.blog-post a {
+    color: var(--accent);
+    text-decoration: none;
+}
+.blog-post a:hover {
+    text-decoration: underline;
+}
+
+.blog-post img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin: 1rem 0;
+    border: 1px solid var(--border);
+}
+
+.blog-post pre {
+    background-color: #010409;
+    border: 1px solid var(--border);
+    border-radius: 5px;
+    padding: 1rem;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    overflow-x: auto;
+    margin: 1rem 0;
+}
+
+.blog-post code {
+    font-family: 'Courier New', monospace;
+    color: var(--terminal-green);
+    font-size: 0.95rem;
+}
+
+.blog-post ul, .blog-post ol {
+    margin-left: 2rem;
+    margin-bottom: 1rem;
+}
+
+.blog-post li {
+    margin-bottom: 0.5rem;
+}
+
+.blog-post blockquote {
+    border-left: 4px solid var(--accent);
+    padding-left: 1rem;
+    margin: 1rem 0;
+    color: var(--text-secondary);
+    font-style: italic;
+}
