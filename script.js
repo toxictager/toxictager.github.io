@@ -67,6 +67,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // To add a new post, create a new .md file in the 'posts' folder
     // and add its filename to the top of this list.
     const postFiles = [
+        'my-secound-post.md',
         'my-first-post.md'
         // 'my-second-post.md', // Example for your next post
     ];
