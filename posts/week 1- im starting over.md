@@ -1,6 +1,6 @@
 # Week 1: Why I'm Starting Over
 
-**November 29, 2024** | Week 1 of 26
+**November 26, 2025** | Week 1 of 26
 
 ---
 
