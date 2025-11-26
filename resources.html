@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Free resources and tools I'm using to learn coding from scratch - Python, Git, and cybersecurity fundamentals.">
+    <title>Resources | Loui Levy</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="main-nav">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">Loui Levy</a>
+            <div class="nav-links">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="learning-log.html" class="nav-link">Learning Log</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="resources.html" class="nav-link active">Resources</a>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <div class="content-page">
+            <div class="content-card">
+                <h2>Learning Resources</h2>
+                <p>Everything I'm using to learn is completely free. No courses, no paid subscriptions - just quality resources and consistent effort.</p>
+
+                <h3>What I'm Learning From (Months 1-2)</h3>
+                <ul class="resource-list">
+                    <li class="resource-item">
+                        <h4>CS50P - Harvard's Introduction to Python</h4>
+                        <p>The foundation. Free, project-based, teaches you to actually think like a programmer. Weekly problem sets force you to struggle and learn.</p>
+                        <a href="https://cs50.harvard.edu/python" target="_blank" class="resource-link">Start CS50P →</a>
+                    </li>
+
+                    <li class="resource-item">
+                        <h4>Official Python Documentation</h4>
+                        <p>Learning to read documentation is a skill itself. When you're stuck, docs are your first stop before asking for help.</p>
+                        <a href="https://docs.python.org/3/" target="_blank" class="resource-link">Python Docs →</a>
+                    </li>
+
+                    <li class="resource-item">
+                        <h4>Real Python</h4>
+                        <p>Clear explanations of Python concepts with practical examples. Great for understanding the "why" behind code.</p>
+                        <a href="https://realpython.com" target="_blank" class="resource-link">Real Python →</a>
+                    </li>
+                </ul>
+
+                <h3>Communities & Getting Help</h3>
+                <ul class="resource-list">
+                    <li class="resource-item">
+                        <h4>r/learnprogramming</h4>
+                        <p>Reddit community for beginners. Ask questions, get help, see others struggle with the same problems you're facing.</p>
+                        <a href="https://reddit.com/r/learnprogramming" target="_blank" class="resource-link">Visit Subreddit →</a>
+                    </li>
+
+                    <li class="resource-item">
+                        <h4>Python Discord</h4>
+                        <p>Active community of Python developers willing to help beginners. Real-time help when you're stuck.</p>
+                        <a href="https://pythondiscord.com" target="_blank" class="resource-link">Join Discord →</a>
+                    </li>
+
+                    <li class="resource-item">
+                        <h4>Stack Overflow</h4>
+                        <p>Someone has probably had your error before. Learn to search effectively and read existing answers.</p>
+                        <a href="https://stackoverflow.com" target="_blank" class="resource-link">Stack Overflow →</a>
+                    </li>
+                </ul>
+
+                <h3>Git & GitHub Basics</h3>
+                <p>Version control is essential. Here are the only commands you need to start:</p>
+
+                <div style="background-color: var(--bg-tertiary); padding: 1.5rem; border-radius: 6px; margin: 1rem 0;">
+                    <p style="margin-bottom: 1rem; color: var(--text-muted); font-size: 0.875rem;">ONE-TIME SETUP:</p>
+                    <pre style="background: var(--bg-primary); padding: 1rem; border-radius: 4px; margin-bottom: 1rem;"><code>git config --global user.name "Your Name"
+git config --global user.email "your-email@example.com"</code></pre>
+
+                    <p style="margin-bottom: 1rem; color: var(--text-muted); font-size: 0.875rem;">FOR EACH NEW PROJECT:</p>
+                    <pre style="background: var(--bg-primary); padding: 1rem; border-radius: 4px; margin-bottom: 1rem;"><code>git init
+git add .
+git commit -m "Initial commit"
+git branch -M main
+git remote add origin [your-github-repo-url]
+git push -u origin main</code></pre>
+
+                    <p style="margin-bottom: 1rem; color: var(--text-muted); font-size: 0.875rem;">DAILY WORKFLOW:</p>
+                    <pre style="background: var(--bg-primary); padding: 1rem; border-radius: 4px;"><code>git add .
+git commit -m "Describe what you did"
+git push</code></pre>
+                </div>
+
+                <ul class="resource-list">
+                    <li class="resource-item">
+                        <h4>GitHub Docs - Git Basics</h4>
+                        <p>Official documentation for getting started with Git. Don't overcomplicate it - basics first.</p>
+                        <a href="https://docs.github.com/en/get-started" target="_blank" class="resource-link">GitHub Docs →</a>
+                    </li>
+                </ul>
+
+                <h3>Security Resources (Months 5-6)</h3>
+                <p style="color: var(--text-muted); font-style: italic;">Locked until I finish Python fundamentals. These are my next steps:</p>
+
+                <ul class="resource-list">
+                    <li class="resource-item">
+                        <h4>PicoCTF</h4>
+                        <p>Free beginner-friendly CTF (Capture The Flag) challenges. Learn security concepts through hands-on practice.</p>
+                        <a href="https://picoctf.org" target="_blank" class="resource-link">PicoCTF →</a>
+                    </li>
+
+                    <li class="resource-item">
+                        <h4>OverTheWire: Bandit</h4>
+                        <p>Linux basics and security fundamentals through wargame challenges. Perfect for beginners.</p>
+                        <a href="https://overthewire.org/wargames/bandit/" target="_blank" class="resource-link">Bandit Wargame →</a>
+                    </li>
+
+                    <li class="resource-item">
+                        <h4>TryHackMe (Free Tier)</h4>
+                        <p>Guided cybersecurity learning paths. Free rooms available for learning basics.</p>
+                        <a href="https://tryhackme.com" target="_blank" class="resource-link">TryHackMe →</a>
+                    </li>
+                </ul>
+
+                <h3>My Learning Principles</h3>
+                <ul>
+                    <li><strong>No AI code generation</strong> - AI can explain, but can't learn for me</li>
+                    <li><strong>Struggle is learning</strong> - If it's easy, I'm not growing</li>
+                    <li><strong>Build real things</strong> - No tutorial hell, solve actual problems</li>
+                    <li><strong>Document everything</strong> - If I can't explain it, I don't understand it</li>
+                    <li><strong>Consistency > intensity</strong> - 1 hour daily beats 10 hours on Sunday</li>
+                </ul>
+            </div>
+
+            <div class="content-card">
+                <h2>Tools I'm Using</h2>
+                
+                <h3>Development Environment</h3>
+                <ul>
+                    <li><strong>Python 3.11+</strong> - The language I'm learning</li>
+                    <li><strong>VS Code</strong> - Free code editor (lightweight, powerful)</li>
+                    <li><strong>Git & GitHub</strong> - Version control and portfolio</li>
+                    <li><strong>Windows Terminal</strong> - For running Python and Git commands</li>
+                </ul>
+
+                <h3>VS Code Extensions (Recommended)</h3>
+                <ul>
+                    <li><strong>Python</strong> - Microsoft's official Python extension</li>
+                    <li><strong>Pylint</strong> - Catches errors and bad practices</li>
+                    <li><strong>GitLens</strong> - Makes Git easier to understand</li>
+                </ul>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Loui Levy. Built without AI. Updated every Friday.</p>
+            <p class="footer-note">Last updated: <span id="last-updated">November 2024</span></p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

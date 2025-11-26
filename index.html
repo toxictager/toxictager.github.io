@@ -3,127 +3,190 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Loui Levy | Developer</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <meta name="description" content="Loui Levy - 19yo learning to code from scratch. Documenting my journey from AI-dependent to real developer. Weekly updates on Python, cybersecurity, and red team fundamentals.">
+    <title>Loui Levy | Learning to Code</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <div class="logo">Loui Levy</div>
-            <div class="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
+    <nav class="main-nav">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">Loui Levy</a>
+            <div class="nav-links">
+                <a href="index.html" class="nav-link active">Home</a>
+                <a href="learning-log.html" class="nav-link">Learning Log</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="resources.html" class="nav-link">Resources</a>
             </div>
-            <ul class="nav-links">
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#demo">Note App</a></li>
-                <li><a href="#blog">Blog</a></li>
-                <li><a href="#resume">Resume</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+        </div>
+    </nav>
 
     <main>
-        <section id="hero">
-            <div class="hero-content">
-                <h1 class="hero-title">Loui Levy</h1>
-                <p class="hero-subtitle">Developer & Problem Solver</p>
-                <a href="#about" class="btn">Discover More</a>
-                <div class="social-links">
-                    <a href="https://github.com/toxictager" target="_blank"><i class="fab fa-github"></i></a>
-                    <a href="https://www.linkedin.com/in/loui-levy-3067ba344/" target="_blank"><i class="fab fa-linkedin"></i></a>
-                    <a href="mailto: louilevyofficial@gmail.com"><i class="fas fa-envelope"></i></a>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <h1 class="hero-title">Learning to Code<br><span class="accent">From Scratch</span></h1>
+                    <p class="hero-subtitle">19 | Python | Red Team Aspirant</p>
+                    <p class="hero-description">I've been faking it with AI. Starting over. Documenting everything.</p>
+                    <div class="hero-cta">
+                        <a href="learning-log.html" class="btn btn-primary">Read My Journey</a>
+                        <a href="about.html" class="btn btn-secondary">Why I'm Doing This</a>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <section id="about">
-            <h2 class="section-title">About Me</h2>
-            <p>Welcome to my digital space. I'm Loui Levy, a developer passionate about creating innovative solutions and exploring new technologies.</p>
-            <div class="terminal-box">
-                <div class="terminal-header">
-                    <div class="terminal-circles"><div class="circle circle-red"></div><div class="circle circle-yellow"></div><div class="circle circle-green"></div></div>
-                </div>
-                <div class="terminal-content">
-                    <div class="command-line"><span class="prompt">loui@dev:~$</span><span class="command">whoami</span></div>
-                    <div class="command-output">A passionate developer with a keen interest in Python programming and building useful tools. I enjoy solving complex problems and continuously learning new technologies.</div>
-                    <div class="command-line"><span class="prompt">loui@dev:~$</span><span class="command">ls -la skills/</span></div>
-                    <div class="command-output">drwxr-xr-x  python<br>drwxr-xr-x  problem-solving<br>drwxr-xr-x  data-analysis<br>drwxr-xr-x  cybersecurity<br>drwxr-xr-x  automation<br>drwxr-xr-x  ethical-hacking<br>drwxr-xr-x  continuous-learning<br></div>
-                    <div class="command-line"><span class="prompt">loui@dev:~$</span><span class="command">cat interests.txt</span></div>
-                    <div class="command-output">programming<br>automation<br>cybersecurity<br>ethical hacking<br></div>
-                    <div class="command-line"><span class="prompt">loui@dev:~$</span><span class="command">_</span><span class="cursor"></span></div>
-                </div>
-            </div>
-            <p>Im a self learner who is motivated and passionate about ethical hacking, automation and programing in general.</p>
-        </section>
-
-        <section id="projects">
-            <h2 class="section-title">Projects</h2>
-            <p>Here are some projects I've worked on. Each demonstrates different skills and interests.</p>
-            <div class="projects-grid">
-                <div class="project-card"><div class="project-img"><i class="fas fa-sticky-note"></i></div><div class="project-content"><h3 class="project-title">Python Note Taking App</h3><p class="project-description">A versatile note-taking application built with Python that allows users to create, edit, and organize their notes efficiently.</p><div class="project-tech"><span class="tech-tag">Python</span><span class="tech-tag">Tkinter</span><span class="tech-tag">subprocess</span></div><div class="project-links"><a href="#demo"><i class="fas fa-play-circle"></i> Live Demo</a><a href="https://github.com/toxictager/notes-project"><i class="fab fa-github"></i> Source Code</a></div></div></div>
-                <div class="project-card"><div class="project-img"><i class="fas fa-code"></i></div><div class="project-content"><h3 class="project-title">Linux Enumaration tool</h3><p class="project-description">A linux enumaration(enum) tool to tell you the baisc about your linux PC like: System info, Logged in users, Network interfaces, ect</p><div class="project-tech"><span class="tech-tag">Linux</span><span class="tech-tag">Enumaration</span><span class="tech-tag">Networking</span></div><div class="project-links"><a href="https://github.com/toxictager/linux_enum"><i class="fab fa-github"></i> Source Code</a></div></div></div>
-                <div class="project-card"><div class="project-img"><i class="fas fa-user-secret"></i></div><div class="project-content"><h3 class="project-title">SpecterX</h3> <p class="project-description">A powerful all-in-one red team recon toolkit combining passive recon, subdomain scanning, port scanning, web fingerprinting, OSINT, vulnerability detection, payload generation, and more — all from a single interactive terminal interface.</p><div class="project-tech"><span class="tech-tag">Red Team</span><span class="tech-tag">Recon</span><span class="tech-tag">OSINT</span><span class="tech-tag">Automation</span><span class="tech-tag">Python</span></div><div class="project-links"><a href="https://github.com/toxictager/SpecterX" target="_blank"><i class="fab fa-github"></i> Source Code</a></div></div></div>
-                <div class="project-card"><div class="project-img"><i class="fas fa-laptop-code"></i></div><div class="project-content"><h3 class="project-title">Coming Soon</h3></div></div>
-            </div>
-        </section>
-
-        <section id="demo">
-            <h2 class="section-title">Python Note Taking App</h2>
-            <p>Try out a simplified version of my Python note-taking application right in your browser!</p>
-            <div id="note-app"><div class="note-app-container"><div class="note-app-header"><input type="text" class="note-title-input" placeholder="Note Title" value="My First Note"><button class="note-btn" id="new-note-btn">New Note</button></div><div class="note-app-content"><div class="note-sidebar"><div class="note-item active"><div class="note-item-title">My First Note</div><div class="note-item-preview">This is my first note in the app...</div></div><div class="note-item"><div class="note-item-title">Ideas</div><div class="note-item-preview">- Project ideas for the weekend...</div></div><div class="note-item"><div class="note-item-title">To-Do List</div><div class="note-item-preview">[ ] Complete the website...</div></div></div><div class="note-editor"><textarea class="note-content" placeholder="Start typing your note here...">This is my first note in the app. I can write anything I want here and organize my thoughts. The app allows me to: - Create new notes - Edit existing notes - Delete notes I no longer need - Organize notes by categories It's a great way to keep track of ideas, to-do lists, and important information!</textarea><div class="note-controls"><button class="note-btn" id="delete-note-btn">Delete</button><button class="note-btn primary" id="save-note-btn">Save</button></div></div></div></div></div>
-            <p class="note-app-description" style="margin-top: 1rem;">This is a simplified front-end demo of my Python note-taking application. The full version includes additional features like note categorization, search functionality, and data persistence.</p>
-        </section>
-        
-        <section id="blog">
-            <h2 class="section-title">Hacking Journal</h2>
-            <p>A log of my journey through cybersecurity, new discoveries, and project deep-dives.</p>
-            <div id="blog-feed" class="blog-feed"></div>
-        </section>
-        <section id="resume">
-            <h2 class="section-title">Resume</h2>
-            <p>Here's a quick look at my education and technical skills as I pursue opportunities in cybersecurity and automation.</p>
-            <div class="resume-content">
-                <div class="resume-section">
-                    <h3 class="resume-section-title">Education</h3>
-                    <div class="resume-item"><div class="resume-item-header"><h4 class="resume-item-title">СУ "Свети Климент Охридски"</h4><div class="resume-item-date">2023 - Present</div></div><div class="resume-item-subtitle">с. Камен, България</div><div class="resume-item-description">Current 11th grade student pursuing a strong interest in ethical hacking, scripting, and information security.</div></div>
-                    <div class="resume-item"><div class="resume-item-header"><h4 class="resume-item-title">ПГ по електротехника и автоматика</h4><div class="resume-item-date">2021 - 2023</div></div><div class="resume-item-subtitle">София, България</div><div class="resume-item-description">Completed 8th and 9th grade with focus on technical subjects including electronics, automation, and computing fundamentals.</div></div>
-                </div>
-                <div class="resume-section">
-                    <h3 class="resume-section-title">Skills</h3>
-                    <div class="skill-tags"><span class="skill-tag">Python</span><span class="skill-tag">Batch Scripting</span><span class="skill-tag">VBScript</span><span class="skill-tag">Linux</span><span class="skill-tag">Networking</span><span class="skill-tag">Ethical Hacking</span><span class="skill-tag">Recon Tools</span><span class="skill-tag">Automation</span><span class="skill-tag">HTML/CSS</span><span class="skill-tag">GitHub</span><span class="skill-tag">PyQt6</span></div>
-                </div>
-                <div class="resume-section">
-                    <h3 class="resume-section-title">Projects</h3>
-                    <div class="resume-item"><div class="resume-item-header"><h4 class="resume-item-title">SpecterX</h4><div class="resume-item-date">2025 (In Progress)</div></div><div class="resume-item-subtitle">Educational Recon Toolkit</div><div class="resume-item-description">A Python-based toolkit combining DNS, WHOIS, and subdomain enumeration with plans for integrating a simple remote access tool (RAT). Designed for legal, educational red-team demos. Still under development.</div></div>
-                    <div class="resume-item"><div class="resume-item-header"><h4 class="resume-item-title">LinuxEnumTool</h4><div class="resume-item-date">2025</div></div><div class="resume-item-subtitle">system info</div><div class="resume-item-description">A Bash script that automates enumeration of critical privilege escalation vectors on Linux targets. Includes SUID checks, kernel info, PATH vulnerabilities, and misconfigurations.</div></div>
-                    <div class="resume-item"><div class="resume-item-header"><h4 class="resume-item-title">Python Note App</h4><div class="resume-item-date">2025</div></div><div class="resume-item-subtitle">Desktop Note-Taking Tool</div><div class="resume-item-description">A user-friendly notes app built with Tkinter, including live editing, autosave, and a clean UI. Ideal for organizing ideas and research notes locally.</div></div>
+        <!-- Progress Tracker -->
+        <section class="progress-section">
+            <div class="container">
+                <div class="progress-card">
+                    <h2 class="progress-title">Current Progress</h2>
+                    <div class="progress-stats">
+                        <div class="stat">
+                            <div class="stat-label">Current Phase</div>
+                            <div class="stat-value">Week 1/26</div>
+                            <div class="stat-desc">Python Fundamentals</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-label">Hours This Week</div>
+                            <div class="stat-value" id="hours-week">0/10</div>
+                            <div class="stat-desc">Committed Daily</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-label">Next Milestone</div>
+                            <div class="stat-value">Week 4</div>
+                            <div class="stat-desc">First Real Project</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-label">University Starts</div>
+                            <div class="stat-value">May 2026</div>
+                            <div class="stat-desc">~24 Weeks Away</div>
+                        </div>
+                    </div>
+                    <div class="progress-bar-container">
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 4%;"></div>
+                        </div>
+                        <div class="progress-label">4% Complete (Week 1 of 26)</div>
+                    </div>
+                    <div class="next-update">
+                        <span class="update-label">Next blog post:</span>
+                        <span class="update-date" id="next-friday">This Friday</span>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <section id="contact">
-            <h2 class="section-title">Contact</h2>
-            <p>Interested in working together or have a question? Feel free to reach out!</p>
-            <div class="contact-buttons">
-                <a href="mailto: louilevyofficial@gmail.com" class="contact-btn"><i class="fas fa-envelope"></i> Email Me</a>
-                <a href="https://www.linkedin.com/in/loui-levy-3067ba344/" target="_blank" class="contact-btn"><i class="fab fa-linkedin"></i> Connect on LinkedIn</a>
-                <a href="https://github.com/toxictager" target="_blank" class="contact-btn"><i class="fab fa-github"></i> Follow on GitHub</a>
+        <!-- What I'm Learning -->
+        <section class="learning-section">
+            <div class="container">
+                <h2 class="section-title">What I'm Learning Right Now</h2>
+                <div class="learning-grid">
+                    <div class="learning-card">
+                        <div class="learning-icon">🐍</div>
+                        <h3>Python Fundamentals</h3>
+                        <p>Variables, data types, conditionals, loops, functions. The boring basics that actually matter.</p>
+                        <div class="learning-status">
+                            <span class="status-badge in-progress">In Progress</span>
+                        </div>
+                    </div>
+                    <div class="learning-card">
+                        <div class="learning-icon">📚</div>
+                        <h3>CS50P</h3>
+                        <p>Harvard's free Python course. Problem sets, lectures, and actual projects that force me to think.</p>
+                        <div class="learning-status">
+                            <span class="status-badge in-progress">Week 0</span>
+                        </div>
+                    </div>
+                    <div class="learning-card">
+                        <div class="learning-icon">⚙️</div>
+                        <h3>Git & GitHub</h3>
+                        <p>Version control basics. Learning to commit properly and document my progress.</p>
+                        <div class="learning-status">
+                            <span class="status-badge in-progress">Basics Only</span>
+                        </div>
+                    </div>
+                    <div class="learning-card locked">
+                        <div class="learning-icon">🔒</div>
+                        <h3>Security Fundamentals</h3>
+                        <p>Locked until I finish Python fundamentals. No shortcuts.</p>
+                        <div class="learning-status">
+                            <span class="status-badge locked">Month 5-6</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section class="projects-section">
+            <div class="container">
+                <h2 class="section-title">Real Projects</h2>
+                <p class="section-subtitle">No AI. No fake tools. Just things I actually build.</p>
+                <div class="projects-grid">
+                    <div class="project-placeholder">
+                        <div class="placeholder-icon">📦</div>
+                        <h3>Projects Coming Soon</h3>
+                        <p>First project target: Week 4</p>
+                        <p class="placeholder-note">Each project will be built completely from scratch with weekly documentation of what I learned and struggled with.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Latest Blog Post Preview -->
+        <section class="blog-preview-section">
+            <div class="container">
+                <h2 class="section-title">Latest Update</h2>
+                <div class="blog-preview-card">
+                    <div class="blog-meta">
+                        <span class="blog-date">This Friday, November 29, 2024</span>
+                        <span class="blog-tag">Week 1</span>
+                    </div>
+                    <h3 class="blog-preview-title">Why I'm Starting Over</h3>
+                    <p class="blog-preview-excerpt">I built a portfolio of "cybersecurity tools" using AI. I couldn't explain how any of them worked. I was one technical interview away from humiliation. Here's why I'm starting from scratch...</p>
+                    <a href="learning-log.html" class="blog-read-more">Read Full Post →</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact-section">
+            <div class="container">
+                <h2 class="section-title">Get in Touch</h2>
+                <p class="section-subtitle">Following the same journey? Let's connect.</p>
+                <div class="contact-links">
+                    <a href="mailto:louilevy1@gmail.com" class="contact-btn">
+                        <svg class="contact-icon" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"></path>
+                            <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"></path>
+                        </svg>
+                        Email Me
+                    </a>
+                    <a href="https://github.com/toxictager" target="_blank" class="contact-btn">
+                        <svg class="contact-icon" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                        </svg>
+                        GitHub
+                    </a>
+                    <a href="https://www.linkedin.com/in/loui-levy-3067ba344/" target="_blank" class="contact-btn">
+                        <svg class="contact-icon" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                        </svg>
+                        LinkedIn
+                    </a>
+                </div>
             </div>
         </section>
     </main>
-    
-    <footer>
-        <a href="#" class="back-to-top">Back to Top <i class="fas fa-arrow-up"></i></a>
-        <div class="Copywrite">thanks for the help Alex.</div>
-        <div class="Copywrite">&copy; 2025 Loui Levy. All rights reserved.</div>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Loui Levy. Built without AI. Updated every Friday.</p>
+            <p class="footer-note">Last updated: <span id="last-updated">November 2024</span></p>
+        </div>
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
