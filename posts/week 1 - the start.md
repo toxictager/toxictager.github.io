@@ -141,6 +141,6 @@ Week 2 starts Monday. Full week. 10 hours. Let's see if I can actually do it.
 
 **Status:** Below target, need to build consistency
 
-**Next post:** Friday, December 6, 2025
+**Next post:** Friday, December 5 2025
 
 ---
