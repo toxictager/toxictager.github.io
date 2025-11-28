@@ -104,7 +104,7 @@ document.querySelectorAll('section').forEach(section => {
 
 // List of blog post files (newest first)
 const blogPosts = [
-    'week1 - the start.md',
+    'week 1 - the start.md',
     'week 0- im starting over.md'
     // Add new posts to the top of this array
     // Example: 'week-2-python-basics.md',
