@@ -1,6 +1,6 @@
 # Week 1: Three Days, 2.5 Hours
 
-**November 29, 2024** | Week 1 of 26
+**November 29, 2025** | Week 1 of 26
 
 ---
 

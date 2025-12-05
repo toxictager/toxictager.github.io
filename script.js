@@ -104,8 +104,9 @@ document.querySelectorAll('section').forEach(section => {
 
 // List of blog post files (newest first)
 const blogPosts = [
+    'week 2 - the first real week.md',
     'week 1 - the start.md',
-    'week 0- im starting over.md'
+    'im starting over.md'
     // Add new posts to the top of this array
     // Example: 'week-2-python-basics.md',
 ];
@@ -208,7 +209,7 @@ if (document.getElementById('blog-posts')) {
 // You can manually update this each week
 // Format: { week: X, hours: Y }
 const currentWeekData = {
-    week: 2,
+    week: 3,
     hours: 0, // Update this as you log hours
     target: 10
 };
