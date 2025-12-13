@@ -104,6 +104,7 @@ document.querySelectorAll('section').forEach(section => {
 
 // List of blog post files (newest first)
 const blogPosts = [
+    'week 3 & 4 - real life.md',
     'week 2 - the first real week.md',
     'week 1 - the start.md',
     'im starting over.md'
